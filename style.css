@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: linear-gradient(to right, #233d4d, #22444D), #22354D;
+    grid-area: header;
+    /* box-shadow: 0px 1px 15px #000000; */
+    border-bottom: 3px solid #fe7f2d;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.menu{
+    display: flex;
+    list-style: none;
+    justify-items: center;
+}
+
+.menu,li{
+    padding-right: 1rem;
+}
+
+.menu,li,a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu,li,a:hover{
+    color: gray;
+}
+
+
+aside{
+    grid-area: aside;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+
+main{
+    background: white;
+    grid-area: main;
+}
+
+footer{
+    background: linear-gradient(#F1F2F4, white);
+    grid-area: footer;
+    border-top: 1.8px solid #969696;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header header" "aside menu" "footer footer";
+}
